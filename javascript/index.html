@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica javascript</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="section1">
+            <p class="title1">Opciones para llegar a tiempo al trabajo</p>
+            <div class="containInput">
+                <label>Ingrese hora de entrada al trabajo: </label>
+                <input type="number" id="horaEntrada" >
+                <label>Ingrese hora de partida desde su casa: </label>
+                <input type="number" id="horaSalida" >
+                <label>Elige tipo de transporte:</label>
+                <select id="transporte">
+                    <option value="1">Bus</option>
+                    <option value="2">Carro</option>
+                </select>
+            </div>
+            <div class="containerButton">
+                <input class="buttonGeneric buttonPlan" type="submit" value="Verificar plan" onclick="crearPlan()" >
+            <input class="buttonGeneric buttonPlan" type="submit" value="Clean" onclick="clean()" >
+            </div>
+           
+            
+        </section>
+        <section class="section2">
+            <p class="title1">Conversor temperatura en New York de °C a °F</p>
+            <div class="containInput">
+                <label>Ingrese la temperatura actual en °C: </label>
+                <input type="number" id="tempActual" >
+                <label>La temperatura en °F es: </label>
+                <input type="number" id="tempFarenheid" >
+            </div>
+            <div class="containerButton">
+                <input class="buttonGeneric buttonTemp" type="submit" value="Calcular" onclick="calcular()" >
+            </div>
+        </section>
+        <section class="section3">
+            <p class="title1">Conversor pesos a dolar</p>
+            <div class="containInput">
+                <label>Ingrese cantidad de dinero en pesos: </label>
+                <input type="number" id="cantPesos" >
+                <label>La cantidad de dinero en: </label>
+                <input type="number" id="cantDolar" >
+            </div>
+            <div class="containerButton">
+                <input class="buttonGeneric buttonDinero" type="submit" value="Calcular" onclick="calcularDinero()" >
+            </div>
+        </section>
+        <section class="section4">
+            <p class="title1">Receta para preparar arroz con pollo para 5 personas</p>
+            <form class="formulario" method="POST">
+                <div class="containInput">
+                    <label>Ingrese nombre del ingrediente: </label>
+                    <input type="text" id="nameIngrediente" >
+                    <label>Ingrese cantidad  en gr: </label>
+                    <input type="number" id="cantIngrediente" >
+                </div>
+                <div class= "containerButton">
+                    <input class="buttonGeneric buttonReceta" type="submit" id="addIngrediente" value="Agregar">
+                    <input class="buttonGeneric buttonReceta" type="button" id="enviarIngrediente" value="Enviar">
+                </div>
+            </form>
+           
+            <div>
+                <table id="receta" class='hide'>
+                    <thead>
+                        <th>Ingrediente</th>
+                        <th>Cantidad(gr)</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+       
+        
+    </main>
+    <script src="plan_llegar_trabajo.js"></script>
+    <script src="verificar_numero.js"></script>
+    <script src="temperatura.js"></script>
+    <script src="conversor.js"></script>
+    <script src="receta.js"></script>
+</body>
+</body>
+</html>
