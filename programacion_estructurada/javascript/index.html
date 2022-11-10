@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estructuras</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <article class="container-1">
+        <div class="contain-title">
+            <h1>Calcular edad actual</h1>
+        </div>
+        <div class="contain-input">
+            <label for="date">Ingrese fecha de nacimiento:</label>
+            <input type="date" id="date">
+            <label for="current_date">Ingrese fecha actual:</label>
+            <input type="date" id="current_date">
+            <input type="button" value="Calcular" class="current_age" id="current_age">
+        </div>
+        <div class="contain-result">
+            <label for="result">Su edad actual es:</label>
+            <input type="text" id="result">
+        </div>         
+    </article>
+    <article class="container-2">
+        <div  class="contain-title">
+            <h1>Calcular si un año es bisiesto</h1>
+        </div>
+        <div class="contain-input">
+            <label for="anio">Ingrese el año a calcular:</label>
+            <input type="number" id="anio">
+            <input type="button" value="Calcular" class="current_age" id="result_bisiesto">
+        </div>
+        <div class="contain-result">           
+            <input type="text" id="result_bis">
+        </div>         
+    </article>
+    
+<script src="edad_actual.js"></script>
+<script src="anio_bisiesto.js"></script>    
+</body>
+</html>

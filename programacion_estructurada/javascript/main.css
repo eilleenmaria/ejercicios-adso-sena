@@ -1,0 +1,53 @@
+:root{
+    --background-one: #FFFC99;
+    --background-two:#EAFDCF;
+    --color-primary: #01200F;
+    --font-size-primary:1.5rem;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    color: var(--color-primary);
+    height: 100vh;
+}
+.container-1{
+    background-color: var(--background-one);
+    height: 50%;
+
+}
+.container-2{
+    background-color: var(--background-two);
+    height: calc(100% - 50%);
+}
+label, input{
+    font-size: var(--font-size-primary);
+    
+}
+.contain-title{
+    display: flex;
+    justify-content: center;
+}
+.contain-input{
+    display: flex;
+   
+    justify-content: center;
+}
+label{
+    padding-right: 10px;
+}
+label:nth-of-type(2n){
+    padding-left: 10px;
+}
+.current_age{
+    margin-left: 10px;
+}
+.contain-result{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+
+
+
